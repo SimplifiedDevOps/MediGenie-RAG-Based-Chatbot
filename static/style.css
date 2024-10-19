@@ -1,0 +1,204 @@
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chat Container */
+.chat {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* Chat Card */
+.card {
+    height: 600px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.card-header {
+    border-radius: 20px 20px 0 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: none;
+    color: white;
+    text-align: left; /* Align content to the left */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* User Information Section (for MediGenie text) */
+.user_info {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Title Styling for MediGenie */
+.user_info span {
+    font-size: 28px; /* Larger font for the title */
+    font-weight: bold; /* Bold for emphasis */
+    color: white;
+    margin-bottom: 5px;
+}
+
+/* Subtitle Styling for the Companion Text */
+.user_info p {
+    font-size: 16px; /* One size larger */
+    font-style: italic; /* Italic for elegance */
+    color: rgba(255, 255, 255, 0.8); /* Light gray for readability */
+    margin: 0;
+}
+
+/* Footer Styling */
+.card-footer {
+    border-radius: 0 0 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+}
+
+/* Messages Styling */
+.msg_card_body {
+    overflow-y: auto;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.msg_cotainer {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #e1f5fe;
+    padding: 10px;
+    color: black;
+    position: relative;
+    max-width: 80%;
+}
+
+.msg_cotainer_send {
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: #a5d6a7;
+    padding: 10px;
+    color: black;
+    position: relative;
+    max-width: 80%;
+    align-self: flex-end;
+}
+
+/* Time Styling */
+.msg_time, .msg_time_send {
+    position: absolute;
+    font-size: 10px;
+    bottom: -15px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.msg_time {
+    left: 0;
+}
+
+.msg_time_send {
+    right: 0;
+}
+
+/* Input Styling */
+.type_msg {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    color: white;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.type_msg:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* Buttons */
+.attach_btn, .send_btn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.attach_btn:hover, .send_btn:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Avatars */
+.user_img, .user_img_msg {
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.user_img {
+    height: 70px;
+    width: 70px;
+}
+
+.user_img_msg {
+    height: 40px;
+    width: 40px;
+}
+
+/* Online Status */
+.online_icon {
+    height: 15px;
+    width: 15px;
+    background-color: #4cd137;
+    border-radius: 50%;
+    border: 1.5px solid white;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+/* Action Menu */
+.action_menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    z-index: 1;
+}
+
+.action_menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action_menu ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.action_menu ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 576px) {
+    .card {
+        height: 80vh;
+    }
+}
