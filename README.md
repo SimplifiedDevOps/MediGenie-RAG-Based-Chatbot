@@ -124,3 +124,35 @@
 - **Combines Retrieval and Generation:** RAG ensures the chatbot doesn’t just generate **generic responses** but uses **relevant context** from the indexed documents.  
 - **Scalable and Up-to-date:** New medical content can be added anytime by **updating the Pinecone vector store**, keeping the chatbot’s knowledge current.  
 - **Accurate Answers:** Grounding responses on real documents helps the chatbot **avoid hallucination** and generate **reliable medical advice**.
+
+
+## Usage
+
+### **Start the Application**  
+Run the following command to start the Flask app:
+
+python app.py
+
+### **Access the Chatbot**
+Open your browser and visit:
+
+http://127.0.0.1:8080
+
+### **Example**
+
+User: How to treat fever?
+MediGenie: Fever can be treated with aspirin or other medications that reduce pain and fever. The recommended dosage for adults is one to two tablets every three to four hours, up to six times per day. In addition to medication, warm whirlpool treatments and debriding procedures may also be recommended to help reduce fever and promote healing. It is important to consult a doctor if fever persists or if there are other concerning symptoms present.
+
+## Future Improvements
+
+- **Add Authentication:**  
+  Secure the chatbot with **login functionality** to ensure only authorized users can access it.
+
+- **Deploy to Cloud:**  
+  Host the app on **AWS** or **GCP** to provide **wider access** and scalability.
+
+- **Add Voice Interaction:**  
+  Integrate **speech-to-text** functionality for a more interactive user experience.
+
+- **Implement RAG Fusion:**  
+  Explore **RAG fusion techniques** to combine multiple retrieved documents or sources more effectively. This will enhance the chatbot's ability to provide **comprehensive and context-aware responses** by fusing information from **multiple relevant documents**.
