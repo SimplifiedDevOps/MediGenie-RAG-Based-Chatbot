@@ -140,8 +140,12 @@ http://127.0.0.1:8080
 
 ### **Example**
 
-User: How to treat fever?
-MediGenie: Fever can be treated with aspirin or other medications that reduce pain and fever. The recommended dosage for adults is one to two tablets every three to four hours, up to six times per day. In addition to medication, warm whirlpool treatments and debriding procedures may also be recommended to help reduce fever and promote healing. It is important to consult a doctor if fever persists or if there are other concerning symptoms present.
+**User:**  
+How to treat fever?  
+
+**MediGenie:**  
+Fever can be treated with aspirin or other medications that reduce pain and fever. The recommended dosage for adults is one to two tablets every three to four hours, up to six times per day. In addition to medication, warm whirlpool treatments and debriding procedures may also be recommended to help reduce fever and promote healing. It is important to consult a doctor if fever persists or if there are other concerning symptoms present.
+
 
 ## Future Improvements
 
